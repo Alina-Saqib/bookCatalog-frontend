@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Layout from "../../LayoutPage/Layout";
 import { deleteBook, getBooks } from "../../api_calls/book_apis";
-import { ToastContainer, toast } from "react-toastify";
+import { toast } from "react-toastify";
 
 import {
   Table,
@@ -129,7 +129,6 @@ const BrowseBooks = () => {
 
   return (
     <Layout>
-      <ToastContainer />
       <Box
         sx={{
           p: 5,

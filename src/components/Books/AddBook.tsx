@@ -3,8 +3,7 @@ import Layout from "../../LayoutPage/Layout";
 import bgImage from "../../assets/Images/backgroundImage.jpg";
 import BookForm from "./BookForm";
 import { addBook } from "../../api_calls/book_apis";
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
 
 interface Book {
@@ -33,7 +32,6 @@ const AddBook = () => {
   };
   return (
     <Layout>
-      <ToastContainer />
       <Box
         sx={{
           background: `url(${bgImage})`,

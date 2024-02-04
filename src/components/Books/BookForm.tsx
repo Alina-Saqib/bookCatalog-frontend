@@ -4,8 +4,8 @@ import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { DatePicker } from "@mui/x-date-pickers/DatePicker";
 import { DemoContainer } from "@mui/x-date-pickers/internals/demo";
 import React, { ChangeEvent, useState } from "react";
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+import { toast } from "react-toastify";
+
 
 const BookForm = ({ initialValues, onSubmit }: any) => {
   
@@ -39,10 +39,9 @@ const BookForm = ({ initialValues, onSubmit }: any) => {
     onSubmit(formData);
     setFormData({});
   };
-  console.log(initialValues);
+
   return (
     <>
-      <ToastContainer />
       <Typography
         variant="h6"
         sx={{

@@ -84,7 +84,7 @@ function NavBar() {
             >
               {pages.map((page,index) => (
                 <MenuItem key={index} onClick={handleCloseNavMenu}>
-                <Link to={index === 0 ? '/books' : `/${page.toLowerCase().replace(' ', '-')}`} style={{ textDecoration: 'none', color: 'inherit' }}>
+                  <Link to={index === 0 ? '/books' : `/${page.toLowerCase().replace(' ', '-')}`} style={{ textDecoration: 'none', color: 'inherit' }}>
                   <Typography textAlign="center">{page}</Typography>
                   </Link>
                 </MenuItem>
@@ -112,15 +112,15 @@ function NavBar() {
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page,index) => (
+              <Link to={index === 0 ? '/books' : `/${page.toLowerCase().replace(' ', '-')}`} style={{ textDecoration: 'none', color: 'inherit' }}>
               <Button
                 key={index}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
-                  <Link to={index === 0 ? '/books' : `/${page.toLowerCase().replace(' ', '-')}`} style={{ textDecoration: 'none', color: 'inherit' }}>
                   {page}
-                  </Link>
               </Button>
+                  </Link>
             ))}
           </Box>
         
