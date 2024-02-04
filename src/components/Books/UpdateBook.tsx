@@ -40,7 +40,7 @@ const UpdateBook = ({ open, handleClose, editBookData ,fetchAllBooks}: any) => {
           transform: "translate(-50%, -50%)",
           bgcolor: "white",
           p: 4,
-          width: 400,
+          width: {xs:'65%' , md:"30%"},
         }}
       >
         {editBookData ? (
