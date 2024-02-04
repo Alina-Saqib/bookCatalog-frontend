@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import Layout from "../../LayoutPage/Layout";
 import { deleteBook, getBooks } from "../../api_calls/book_apis";
 import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+
 import {
   Table,
   TableBody,

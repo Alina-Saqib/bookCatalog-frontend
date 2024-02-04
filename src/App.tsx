@@ -3,7 +3,7 @@ import { Navigate, Route, Routes } from 'react-router-dom'
 import './App.css'
 import Home from './components/Home'
 import BrowseBooks from './components/Books/BrowseBooks'
-import AddBook from './components/Books/AddBook'
+import AddBook from './components/Books/AddBook';
 
 function App() {
 

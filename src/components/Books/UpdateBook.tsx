@@ -2,7 +2,8 @@ import { Box, Modal } from "@mui/material";
 import BookForm from "./BookForm";
 import dayjs from "dayjs";
 import { updateBook } from "../../api_calls/book_apis";
-import { toast } from "react-toastify";
+import { toast,ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 interface Book {
   title: string;
@@ -43,6 +44,7 @@ const UpdateBook = ({ open, handleClose, editBookData ,fetchAllBooks}: any) => {
           width: {xs:'65%' , md:"30%"},
         }}
       >
+         <ToastContainer/>
         {editBookData ? (
           <BookForm
             initialValues={{
